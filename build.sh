@@ -32,7 +32,7 @@ build_packages() {
   build_package openwrt-portfwd
   build_package openwrt-vlmcsd
   build_package openwrt-transproxy
-  build_package openwrt-fullconenat
+  # build_package openwrt-fullconenat
 
   # remove useless & create index
   find bin/ -type f $(printf " ! -name %s_*" $(cat $CUR_DIR/packages.txt | trim_lines)) | xargs rm -f
